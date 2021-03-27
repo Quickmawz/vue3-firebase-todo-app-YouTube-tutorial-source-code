@@ -1,11 +1,17 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import NewTaskFormAndTasksList from '../components/NewTaskFormAndTasksList.vue'
+import TaskEditor from '../components/TaskEditor.vue'
 
 const routes = [
   {
     path: '/',
     name: 'NewTaskFormAndTasksList',
     component: NewTaskFormAndTasksList
+  },
+  {
+    path: '/editTask',
+    name: 'TaskEditor',
+    component: TaskEditor
   },
   {
     path: '/about',
